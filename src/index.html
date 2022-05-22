@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include("html/head.html", { "title": "главная" })
+    @@include("html/head.html", { "title": "Xiaomi Himo C26" })
     <body>
         @@include("html/header.html", {})
-        <main>
-            <span>hello!</span>
-        </main>
+        <main>@@include("html/bike.html", {})</main>
         @@include("html/footer.html", {})
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/app.min.js"></script>
     </body>
 </html>

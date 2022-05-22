@@ -1,0 +1,124 @@
+.bike {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        // gap: 31px;
+    }
+
+    &__column {
+        &:first-child {
+            padding-top: 72px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 77px;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        line-height: 39px;
+        color: #6f6f6f;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        line-height: 17px;
+        max-width: 420px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &:last-child {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 28px 81px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: var(--main-color);
+    }
+
+    &__slide {
+        max-width: 100%;
+
+        // &:not(:first-child) {
+        //     display: none;
+        // }
+    }
+
+    &__characteristics {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        padding: 25px 65px 0 65px;
+    }
+
+    &__characteristic {
+        max-width: 160px;
+    }
+
+    .characteristic-bike {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+
+        &__result {
+            font-weight: 700;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: lowercase;
+        }
+    }
+}
+
+.swiper {
+    max-width: 630px;
+    max-height: 525px;
+    border-bottom: 1px #fff solid;
+
+    &-slider {
+        overflow-x: hidden;
+    }
+
+    &-slide {
+    }
+
+    &-pagination {
+        // margin-top: 52px;
+        top: 52px !important;
+
+        &-bullets {
+            transform: none !important;
+        }
+        &-bullet {
+            width: 2.5px !important;
+            height: 25px !important;
+            background: var(--main-color) !important;
+            border-radius: 7px !important;
+            opacity: 1 !important;
+
+            &-active {
+                background: #ff4040 !important;
+            }
+        }
+    }
+}

@@ -1,18 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@import "./variables";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
 body {
-    background-color: #fff;
-
-    span {
-        color: red;
-    }
+    height: 100%;
+}
+html {
+    font-size: 16px; /* по умолчанию */
+    overflow-x: hidden;
+}
+body {
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-color);
 }
 
-@media (max-width: 768px) {
-    span {
-        font-size: 20px;
-    }
+:root {
+    --main-color: #131313;
 }
-@media (max-width: 768px) {
-    body {
-        background-color: green;
-    }
+
+img {
+    display: block;
 }
+a {
+    color: var(--main-color);
+}
+
+._container {
+    width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@import "./header";
+@import "./bike";

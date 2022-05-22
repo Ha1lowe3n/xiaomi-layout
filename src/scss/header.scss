@@ -1,0 +1,33 @@
+.header {
+    margin-bottom: 97px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        margin-right: 70px;
+        height: 100%;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 -25px;
+        }
+
+        &__link {
+            padding: 42px 25px;
+            text-transform: uppercase;
+            line-height: 17px;
+            transition: 0.3s all;
+
+            &:hover {
+                color: #ffffff;
+                background-color: var(--main-color);
+            }
+        }
+    }
+}
