@@ -1,0 +1,27 @@
+.about {
+    &__inner {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 150px;
+    }
+
+    &__info {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        max-width: 490px;
+    }
+
+    &__description {
+        line-height: 17px;
+        max-width: 450px;
+    }
+}

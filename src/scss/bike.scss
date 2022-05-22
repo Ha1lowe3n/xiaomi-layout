@@ -2,6 +2,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 150px;
         // gap: 31px;
     }
 
@@ -51,10 +52,6 @@
 
     &__slide {
         max-width: 100%;
-
-        // &:not(:first-child) {
-        //     display: none;
-        // }
     }
 
     &__characteristics {
@@ -95,15 +92,7 @@
     max-height: 525px;
     border-bottom: 1px #fff solid;
 
-    &-slider {
-        overflow-x: hidden;
-    }
-
-    &-slide {
-    }
-
     &-pagination {
-        // margin-top: 52px;
         top: 52px !important;
 
         &-bullets {
